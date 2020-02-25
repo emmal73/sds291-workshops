@@ -16,23 +16,55 @@ output:
 
 You can find these slides on my GitHub [github.com/emmal73/sds291-workshops](github.com/emmal73/sds291-workshops)
 
----
-# Happy Git and GitHub for the useR
+--
+###  Happy Git and GitHub for the useR
 
-You can follow along with [Happy Git and GitHub for the useR](https://happygitwithr.com/) written primarily by [Jenny Bryan](jennyrbryan.org) 
+Most of the info covered here is from [Happy Git and GitHub for the useR](https://happygitwithr.com/) written primarily by Jenny Bryan 
+
 
 - [Twitter](https://twitter.com/JennyBryan)
+
+
+- [Website](jennyrbryan.org)
+
 ---
 # Prereqs
 
-We are starting with the assumption that you are using the [**RStudio Desktop**](https://rstudio.com/products/rstudio/) and are familiar with R and RStudio.
+
+We are starting with the assumption that you are using [RStudio Desktop](https://rstudio.com/products/rstudio/) and are familiar with R and RStudio.
+
 
 * If you haven't downloaded RStudio, that has to happen first.
+
+ + Look for the *free* version of RStudio *Desktop* 
+ 
+---
+# Outline
+
+* Sign-up for a GitHub account
+
+* Install Git
+
+* Create a repository & add collaborators
+
+* Clone/download to a .Rproj
+
+* GitHub best practices
+
+
+--
+
+If we have time:
+
+* .Rproj management
+
+* Load data **[DO WE HAVE TO WORRY ABOUT DATA BEING ON GITHUB]**
+
 
 ---
 # Why Git & GitHub?
 
-Version control: keep track of changes to files
+[Version control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control): keep track of changes to files
 
 --
 
@@ -44,14 +76,23 @@ Version control: keep track of changes to files
 
 --
 
-GitHub is to RStudio as Google Drive is to Word.
+**GitHub : RStudio :: Google Drive : Word**
 
-* In RStudio I can make changes to a `.Rmd`, but noone else can see those changes.
+* In RStudio I can make changes to a `.Rmd`, but no one else can see those changes.
 
 * When I incorporate GitHub, other people can collaborate on my R code!
 
 The difference: if I add a few words to a Google doc it doesn't break anything, but in an `.Rmd` it might! This means GitHub has a system of checks so that we don't break each other's code.
 
+---
+# Git vs. GitHub
+
+
+* **Git** is the software that does the version control locally. Git lives on your computer.
+
+* **GitHub** allows for code sharing and collaboration. GitHub is based online. 
+
+[More info here](https://www.theserverside.com/video/Git-vs-GitHub-What-is-the-difference-between-them)
 
 ---
 # Create a GitHub Account
@@ -75,7 +116,14 @@ The difference: if I add a few words to a Google doc it doesn't break anything, 
 ---
 # Work time: GitHub Account
 
-By the end of this break-out session you need to have a GitHub account ready to go.
+By the end of this break-out session you need to have a [GitHub account](https://github.com/) ready to go.
+
+---
+# Terminal
+
+Within RStudio: in the lower left pane.
+
+[How to find the terminal on your computer](https://happygitwithr.com/shell.html#shell)
 
 ---
 # Install Git
@@ -95,16 +143,14 @@ If a version comes up for you, you already have Git installed!
 If you get something like `git: command not found` continue with the following steps.
 
 ---
-# Install Git
-
-## Windows Installation
+# Windows Installation
 
 Install [Git for Windows](https://gitforwindows.org/)
 
 * When asked about "Adjusting your PATH environment", select "Git from the command line and also from 3rd-party software"
 
---
-## macOS Installation
+---
+# macOS Installation
 
 Install the Xcode command line tools (not all of Xcode)
 
@@ -117,6 +163,10 @@ or
 `git config`
 
 Accept the offer and click "Install"
+
+You can also request the installation more directly:
+
+`xcode-select --install`
 
 
 ---
@@ -171,15 +221,35 @@ By the end of this break-out session you should have Git installed on your compu
 
 <img src="github_slides_files/figure-html/create_repo.png">
 
+
 ---
-# Work time: Create a repository
+# Add Collaborators
+
+The person who created the repository should add your teammates as collaborators. You can search by username, full name, or email.
+
+Collaborators, you will get an email with a link to accept the invitation.
 
 ---
 # Add Collaborators
 
 <img src="github_slides_files/figure-html/collaborator.png">
 
-**FIGURE OUT WHAT THE OTHER TEAM MEMBERS WILL HAVE TO DO**
+---
+# View Invitation
+
+<img src="github_slides_files/figure-html/email_invitation.png">
+
+---
+# Accept Invitation
+
+<img src="github_slides_files/figure-html/accept_invitation.png">
+
+---
+# Work time: Create a repository & Add collaborators
+
+Everyone should have push access to the repository.
+
+
 ---
 # .Rproj
 
@@ -196,7 +266,7 @@ Cloning or downloading a repository is how we connect an `.Rproj` to the GitHub 
 
 We start this process from within GitHub, and then move to RStudio.
 
-* You can do it the other way around, but it makes managing files more complicated! I **highly** recommend that when you are starting a new project, start by making a repository on GitHub and then creating the R project.
+* You can do it the other way around, but it makes managing files more complicated! I *highly* recommend that when you are starting a new project, start by making a repository on GitHub and then creating the R project.
 
 ---
 # Clone or Download
@@ -226,21 +296,6 @@ Test this connection by opening the README.md and adding your name!
 <img src="github_slides_files/figure-html/contribution_readme.png">
 
 ---
-# Commit
-
-<img src="github_slides_files/figure-html/commit_message.png">
-
----
-# Pull & Push
-
-<img src="github_slides_files/figure-html/pull_push.png">
-
----
-# See the Results!
-
-<img src="github_slides_files/figure-html/check_readme.png">
-
----
 # GitHub Actions: Commit
 
 **COMMIT**: saving changes you have made.
@@ -254,7 +309,38 @@ Test this connection by opening the README.md and adding your name!
   + When you find yourself transitioning to a new task (i.e. starting a new visualization, reading in a new file, starting a new model)
   
 Collaborators can't see your changes yet.
-  
+
+* Bonus of committing frequently -- they get counted as [contributions](https://github.blog/2013-01-07-introducing-contributions/)
+
+---
+# Commit Process
+
+1. Save your work!
+
+2. Stage (check the boxes next to the file names in the "Git" tab in the upper right-hand corner in RStudio)
+
+ + Only stage the files that need to get sent to other people. 
+
+ + **DO NOT stage the .Rproj or the .gitignore!** This will cause problems down the line.
+ 
+ + rule of thumb for now: if you don't know what it is, don't stage it.
+
+3. Commit
+
+ + Write a commit message! A commit message should be **concise** and **informational**. They should quickly tell the viewer what was accomplished in this commit.
+ 
+For example:
+ + Good commit message: "webscrape UCI_datasets"
+ + Bad commit message: "maybe this won't break it"
+ 
+(yes both of these are commit messages I wrote, do as I say not as I do)
+ 
+ 
+---
+# Commit
+
+<img src="github_slides_files/figure-html/commit_message.png">
+
 ---
 # GitHub Actions: Pull
 
@@ -265,7 +351,7 @@ Collaborators can't see your changes yet.
  + When you first sit down to start coding
  
  + Before you push
-
+ 
 ---
 # GitHub Actions: Push
 
@@ -276,6 +362,24 @@ Collaborators can't see your changes yet.
  + After you commit
  
  + Before you stop coding
+ 
+---
+# Pull & Push
+
+<img src="github_slides_files/figure-html/pull_push.png">
+
+---
+# See the Results!
+
+<img src="github_slides_files/figure-html/check_readme.png">
+
+---
+# Work time: Commit, pull, push
+
+Add your name to the README.md and commit, pull, and push. 
+
+Make sure you can see everyone's names the README on GitHub!
+
  
 ---
 # GitHub Workflow
@@ -291,5 +395,35 @@ To minimize merge conflicts:
 ---
 # Merge Conflicts
 
-**FIGURE OUT HOW TO FORCE A MERGE CONFLICT**
+If something goes wrong in the workflow and collaborators are writing over each other's work, you may end up with a **merge conflict**.
+
+These can look scary, but they are totally fixable. 
+
+**It usually happens if you push before you pull, so remember to pull before you push first!**
+
+---
+# Merge Conflicts
+
+<img src="github_slides_files/figure-html/merge_conflict.png">
+
+---
+# Fix Merge Conflicts
+
+<img src="github_slides_files/figure-html/fix_merge_conflict.png">
+
+---
+# How to Fix a Merge Conflict
+
+* A "merge conflict" in your .Rmd will start with `<<<<<<<HEAD` and end with `>>>>>>>` the commit number (which is just a bunch of letters and numbers).
+
+ + These mark the beginning and end of where the merge conflict happened. It is important to look closely at these lines to make sure that the code still works!
+ 
+ + In our example it is just that 2 people wrote on the same lines and then pushed, so we can simply remove the extra characters that we don't need and clean up the formatting a little bit. 
+ 
+---
+# Fix Merge Conflicts
+
+<img src="github_slides_files/figure-html/commit_merge_fix.png">
+
+
 
