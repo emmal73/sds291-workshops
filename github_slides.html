@@ -66,7 +66,7 @@ If we have time:
 
 * .Rproj management
 
-* Load data **[DO WE HAVE TO WORRY ABOUT DATA BEING ON GITHUB]**
+* Load data
 
 
 ---
@@ -203,6 +203,9 @@ use_git_config(user.name = "USERNAME", user.email = "EMAIL")
 # Work time: Git installation
 
 By the end of this break-out session you should have Git installed on your computer and have introduced yourself to Git.
+
+If you are having difficulties, consult the [Install Git](https://happygitwithr.com/install-git.html#install-git) chapter of Happy Git and GitHub for the useR. 
+
 ---
 # Getting started with GitHub
 
@@ -254,10 +257,9 @@ Collaborators, you will get an email with a link to accept the invitation.
 &lt;img src="github_slides_files/figure-html/accept_invitation.png"&gt;
 
 ---
-# Work time: Create a repository &amp; Add collaborators
+# Work time: Create a repository
 
 Everyone should have push access to the repository.
-
 
 ---
 # .Rproj
@@ -268,10 +270,12 @@ A "project" can be thought of like a "project folder" or a workspace.
 
 * Facilitate collaboration through GitHub
 
+An R project will show up as a `.Rproj` file
+
 ---
 # Clone or Download
 
-Cloning or downloading a repository is how we connect an `.Rproj` to the GitHub repository.
+Cloning or downloading a repository is how we connect the GitHub repository to Rstudio through an `.Rproj`.
 
 We start this process from within GitHub, and then move to RStudio.
 
@@ -283,7 +287,23 @@ We start this process from within GitHub, and then move to RStudio.
 &lt;img src="github_slides_files/figure-html/clone.png"&gt;
 
 ---
-# Create a Project
+# New Project
+
+&lt;img src="github_slides_files/figure-html/new_proj.png"&gt;
+
+---
+# Version Control 
+
+&lt;img src="github_slides_files/figure-html/version_control.png"&gt;
+
+---
+# Git New Project
+
+&lt;img src="github_slides_files/figure-html/git_proj.png"&gt;
+
+---
+
+# New Project
 
 &lt;img src="github_slides_files/figure-html/project.jpg"&gt;
 
@@ -292,17 +312,6 @@ We start this process from within GitHub, and then move to RStudio.
 
 Make sure everyone in your group is in an R project associated with the repository.
 
----
-# Test Connection
-
-Your `.Rproj` and GitHub repository should now be connected! 
-
-Test this connection by opening the README.md and adding your name! 
-
----
-# Make Changes
-
-&lt;img src="github_slides_files/figure-html/contribution_readme.png"&gt;
 
 ---
 # GitHub Actions: Commit
@@ -329,9 +338,7 @@ Collaborators can't see your changes yet.
 2. Stage (check the boxes next to the file names in the "Git" tab in the upper right-hand corner in RStudio)
 
  + Only stage the files that need to get sent to other people. 
-
  + **DO NOT stage the .Rproj or the .gitignore!** This will cause problems down the line.
- 
  + rule of thumb for now: if you don't know what it is, don't stage it.
 
 3. Commit
@@ -345,11 +352,6 @@ For example:
 (yes both of these are commit messages I wrote, do as I say not as I do)
  
  
----
-# Commit
-
-&lt;img src="github_slides_files/figure-html/commit_message.png"&gt;
-
 ---
 # GitHub Actions: Pull
 
@@ -373,6 +375,27 @@ For example:
  + Before you stop coding
  
 ---
+# GitHub Workflow
+
+To minimize merge conflicts:
+
+1. commit
+
+2. pull
+
+3. push
+
+---
+# Make Changes
+
+&lt;img src="github_slides_files/figure-html/contribution_readme.png"&gt;
+
+---
+# Commit
+
+&lt;img src="github_slides_files/figure-html/commit_message.png"&gt;
+
+---
 # Pull &amp; Push
 
 &lt;img src="github_slides_files/figure-html/pull_push.png"&gt;
@@ -390,16 +413,6 @@ Add your name to the README.md and commit, pull, and push.
 Make sure you can see everyone's names the README on GitHub!
 
  
----
-# GitHub Workflow
-
-To minimize merge conflicts:
-
-1. commit
-
-2. pull
-
-3. push
 
 ---
 # Merge Conflicts
@@ -423,7 +436,7 @@ These can look scary, but they are totally fixable.
 ---
 # How to Fix a Merge Conflict
 
-* A "merge conflict" in your .Rmd will start with `&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD` and end with `&gt;&gt;&gt;&gt;&gt;&gt;&gt;` the commit number (which is just a bunch of letters and numbers).
+* A "merge conflict" in your .Rmd will start with `&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD` and end with `&gt;&gt;&gt;&gt;&gt;&gt;&gt;` &amp; the commit number (which is just a bunch of letters and numbers).
 
  + These mark the beginning and end of where the merge conflict happened. It is important to look closely at these lines to make sure that the code still works!
  
