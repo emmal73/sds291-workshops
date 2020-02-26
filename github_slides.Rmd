@@ -1,6 +1,6 @@
 ---
 title: "Git & GitHub"
-author: "Emma Livingston"
+author: 'Emma Livingston <br> <a href="https://emmal73.github.io/"></i>&nbsp; emmaL73.github.io</a><br><br>' 
 institute: "Smith College"
 date: "Feb. 28, 2020"
 output:
@@ -14,7 +14,7 @@ output:
 ---
 #Follow along!
 
-You can find these slides on my GitHub [github.com/emmal73/sds291-workshops](github.com/emmal73/sds291-workshops)
+You can find these slides on my website: [emmaL73.github.io/github_slides.html](emmaL73.github.io/github_slides.html)
 
 --
 ###  Happy Git and GitHub for the useR
@@ -41,24 +41,23 @@ We are starting with the assumption that you are using [RStudio Desktop](https:/
 ---
 # Outline
 
-* Sign-up for a GitHub account
+1. Sign-up for a GitHub account
 
-* Install Git
+1. Install Git
 
-* Create a repository & add collaborators
+1. Create a repository & add collaborators
 
-* Clone/download to a .Rproj
+1. Clone/download to a .Rproj
 
-* GitHub best practices
+1. Commit -> Pull -> Push
 
+1. GitHub best practices
 
 --
 
-If we have time:
+Breakout sessions:
 
-* .Rproj management
-
-* Load data
+Please don't work ahead! If you finish before we move on, help someone near you.
 
 
 ---
@@ -118,6 +117,8 @@ The difference: if I add a few words to a Google doc it doesn't break anything, 
 
 By the end of this break-out session you need to have a [GitHub account](https://github.com/) ready to go.
 
+Make sure to record/remember your username and password, you will need them later.
+
 ---
 # Terminal
 
@@ -127,6 +128,8 @@ Within RStudio: in the lower left pane.
 
 ---
 # Install Git
+
+*[Chapter 6: Install Git](https://happygitwithr.com/install-git.html)*
 
 You may already have Git installed. In the Terminal (a tab option next to the console), type
 
@@ -198,11 +201,20 @@ By the end of this break-out session you should have Git installed on your compu
 If you are having difficulties, consult the [Install Git](https://happygitwithr.com/install-git.html#install-git) chapter of Happy Git and GitHub for the useR. 
 
 ---
+# Repository
+
+* A **repository** can be imagined as a project folder that lives in GitHub.
+
+ + Contains all of the project files
+ 
+ + Stores revision history
+ 
+ + Can be public or private
+
+---
 # Getting started with GitHub
 
 * Have **one person** on your team make a repository on GitHub
-
- + a repository is basically the kind of folder we use to easily interact with GitHub. 
  
 * Click either "New repository" or from the "Repositories" page, click "New"
 
@@ -219,6 +231,7 @@ If you are having difficulties, consult the [Install Git](https://happygitwithr.
 # Create a Repo
 
 <img src="github_slides_files/figure-html/github_repo.png">
+
 ---
 # Create a Repo
 
@@ -250,7 +263,8 @@ Collaborators, you will get an email with a link to accept the invitation.
 ---
 # Work time: Create a repository
 
-Everyone should have push access to the repository.
+By the end of this break-out session everyone should have push access to the repository.
+
 
 ---
 # .Rproj
@@ -261,7 +275,9 @@ A "project" can be thought of like a "project folder" or a workspace.
 
 * Facilitate collaboration through GitHub
 
-An R project will show up as a `.Rproj` file
+An R project will show up as a `.Rproj` file.
+
+The `.Rproj` gets created on your computer, and talks to the repository on GitHub.
 
 ---
 # Clone or Download
@@ -301,7 +317,7 @@ We start this process from within GitHub, and then move to RStudio.
 ---
 # Work time: .Rproj
 
-Make sure everyone in your group is in an R project associated with the repository.
+By the end of this break-out session everyone in your group should be in an R project associated with the repository.
 
 
 ---
@@ -330,7 +346,7 @@ Collaborators can't see your changes yet.
 
  + Only stage the files that need to get sent to other people. 
  + **DO NOT stage the .Rproj or the .gitignore!** This will cause problems down the line.
- + rule of thumb for now: if you don't know what it is, don't stage it.
+ + rule of thumb for now: if you didn't just change it, don't stage it.
 
 3. Commit
 
@@ -340,7 +356,7 @@ For example:
  + Good commit message: "webscrape UCI_datasets"
  + Bad commit message: "maybe this won't break it"
  
-(yes both of these are commit messages I wrote, do as I say not as I do)
+(yes both of these are commit messages I [wrote](https://github.com/emmal73/readUCI/commits/master), do as I say not as I do)
  
  
 ---
@@ -399,7 +415,8 @@ To minimize merge conflicts:
 ---
 # Work time: Commit, pull, push
 
-Add your name to the README.md and commit, pull, and push. 
+By the end of this break-out session you should have added your name to the README.md, committed, pulled, and pushed (in that order!).
+
 
 Make sure you can see everyone's names the README on GitHub!
 
@@ -438,5 +455,33 @@ These can look scary, but they are totally fixable.
 
 <img src="github_slides_files/figure-html/commit_merge_fix.png">
 
+---
+# Troubleshooting & Help
 
+* [GitHub glossary](https://help.github.com/en/github/getting-started-with-github/github-glossary)
 
+* [GitHub help](https://help.github.com/en)
+
+---
+# Git/GitHub humor
+
+some memes by yours truly
+
+<img src="github_slides_files/figure-html/bopit_meme.jpg">
+<br>
+
+--
+
+<img src="github_slides_files/figure-html/bopit_xl.png">
+<br>
+
+--
+
+<img src="github_slides_files/figure-html/git_wrecked.png">
+
+---
+# More Git/GitHub humor
+
+Watch your commit messages scroll by!
+
+[starslog.net](http://starlogs.net/#emmal73/readUCI)
