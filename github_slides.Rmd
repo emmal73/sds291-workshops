@@ -312,7 +312,7 @@ We start this process from within GitHub, and then move to RStudio.
 
 # New Project
 
-<img src="github_slides_files/figure-html/project.jpg">
+<img src="github_slides_files/figure-html/project.png">
 
 ---
 # Work time: .Rproj
