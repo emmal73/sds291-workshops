@@ -5,7 +5,7 @@ institute: "Smith College"
 date: "Feb. 28, 2020"
 output:
   xaringan::moon_reader:
-    css: [default, default, default-fonts]
+    css: [default, metropolis, metropolis-fonts]
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -465,22 +465,21 @@ These can look scary, but they are totally fixable.
 ---
 # Git/GitHub humor
 
-some memes by yours truly
+Some memes by yours truly:
 
 <img src="github_slides_files/figure-html/bopit_meme.jpg">
-<br>
 
---
 
 <img src="github_slides_files/figure-html/bopit_xl.png">
 <br>
 
---
-
-<img src="github_slides_files/figure-html/git_wrecked.png">
 
 ---
 # More Git/GitHub humor
+
+For when git is not cooperating:
+
+<img src="github_slides_files/figure-html/git_wrecked.png">
 
 Watch your commit messages scroll by!
 
